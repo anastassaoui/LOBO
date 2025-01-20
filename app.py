@@ -4,6 +4,10 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 import os
 
+
+st.set_page_config(layout="wide")
+
+
 def load_data():
     if os.path.exists('data.csv'):
         return pd.read_csv('data.csv')
